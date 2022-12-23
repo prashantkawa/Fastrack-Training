@@ -8,17 +8,17 @@ public class CharOccurence {
 	
 	public static void main(String args[]) {
 	
-	String name = "abccddssaaccba";
+	String name = "abacbc";
 	
 	CharOccurence sa = new CharOccurence();
 	
 	boolean result = sa.areOccurrencesEqual(name);
 	
 	if(result == true) {
-		System.out.println("All character occurences are same");
+		System.out.println(result);
 	}
 	else {
-		System.out.println("All character occurences are not same");
+		System.out.println(result);
 	}
 }
 	
@@ -46,7 +46,7 @@ public class CharOccurence {
 		
 		int firstValue = listOfValues.get(0);
 		
-		for(int i=0;i<listOfValues.size();i++) {
+		for(int i=1;i<listOfValues.size();i++) {
 			
 			if(firstValue != listOfValues.get(i)) {
 				result = false;
